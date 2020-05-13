@@ -58,6 +58,10 @@ nav {
   font-size: 30px;
 }
 
+.landing-text {
+  width: 50%;
+}
+
 .landing h1 {
   font-size: 40px;
   font-family: poppins;
@@ -77,5 +81,33 @@ nav {
 }
 
 .landing a:hover {
-  background-color: #ecf0f1;
+  /* background-color: #ecf0f1; */
+}
+
+.landing-img img {
+  border: 5px solid black;
+}
+
+.projects {
+  display: block;
+  /* background-color: cadetblue; */
+}
+
+.projects h2 {
+  margin-left: 30px;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project {
+  /* background-color: brown; */
+  width: 500px;
+}
+
+.project-desc, .project-desc + a {
+  padding-left: 10px;
+  padding-right: 10px;
 }
