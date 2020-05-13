@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'open_sans';
+  src: url('./assets/fonts/opensans-light-webfont.woff2') format('woff2'),
+    url('./assets/fonts/opensans-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('./assets/fonts/poppins-medium-webfont.woff2') format('woff2'),
+    url('./assets/fonts/poppins-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: open_sans;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-brand {
+  padding-left: 30px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.nav-link {
+  padding-right: 30px;
+}
+
+.nav-link:hover {
+  color: silver;
+} 
+
+.landing {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+.landing h1 {
+  font-size: 40px;
+  font-family: poppins;
+}
+
+.landing h2 {
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+.landing a {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 60px;
+  padding: 15px;
+}
+
+.landing a:hover {
+  background-color: #ecf0f1;
+}
