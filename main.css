@@ -49,7 +49,7 @@ nav {
 
 .nav-link:hover {
   color: silver;
-} 
+}
 
 .landing {
   /* background-color: blue; */
@@ -81,33 +81,54 @@ nav {
 }
 
 .landing a:hover {
-  /* background-color: #ecf0f1; */
+  background-color: #ecf0f1;
 }
 
 .landing-img img {
   border: 5px solid black;
 }
 
-.projects {
-  display: block;
+#projects {
   /* background-color: cadetblue; */
 }
 
-.projects h2 {
+#projects h2 {
   margin-left: 30px;
+  font-family: poppins;
 }
 
 .project-content {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project {
   /* background-color: brown; */
+  margin-bottom: 10px;
   width: 500px;
 }
 
-.project-desc, .project-desc + a {
+.project h3 {
+  font-family: poppins;
+}
+
+.project img {
+  width: 500px;
+  height: 250px;
+}
+
+.project a {
+  font-weight: bold;
+}
+
+.project-desc,
+.project-desc+a, .links {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
 }
