@@ -16,11 +16,13 @@
     </div>
     <div class="nav-item">
       <a class="nav-link" href="mailto:daryl.issoufi@hotmail.fr">Contactez-moi</a>
-      <a class="nav-link" href="#">A propos</a>
+      <a class="nav-link" href="#about">A propos</a>
+      <a class="nav-link" href="#skills">Compétences</a>
+      <a class="nav-link" href="#projects">Projets</a>
     </div>
   </nav>
 
-  <section class="landing">
+  <section id="landing">
     <div class="landing-text">
       <h1>Salut, moi c'est Daryl.</h1>
       <h2>Développeur web basé à Lyon, France.<br>Je suis actuellement à la recherche d'une alternance à compter de
@@ -29,6 +31,61 @@
     </div>
     <div class="landing-img">
       <img src="./assets/img/me.jpg">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>A propos</h2>
+    <div class="about-content">
+      <img src="./assets/img/banner.jpg">
+      <div class="about-text">
+        <p>Ayant de l'intérêt pour l'Informatique depuis l'adolescence durant laquelle j'ai découvert mes premières
+          notions de codage en HTML et CSS, j'aimerais me spécialiser dans le développement web.
+          J’ai réalisé plusieurs projets web dans le cadre de mes études mais également à titre personnel dans le but de
+          m’exercer et de me former à diverses technologies.</p>
+        <p>Admissible au Master "Expert Développement Web" d'Ynov Campus Lyon, je suis à la recherche d'un poste de
+          Développeur Web Front-End ou Fullstack en alternance (contrat professionnel ou d'apprentissage) à compter de
+          Septembre 2020.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <div class="skills-content">
+      <div class="languages">
+        <h3>Programmation web</h3>
+        <div class="skill-img">
+          <img class="web-skill-img" src="./assets/img/html.png">
+        </div>
+        <div class="skill">
+          <a class='web-skill-link'>HTML</a>
+        </div>
+        <div class="skill">
+          <a class='web-skill-link'>CSS</a> / <a class="web-skill-link">Bootstrap</a>
+        </div>
+        <div class="skill">
+          <a class='web-skill-link'>JavaScript</a> /
+          <a class='web-skill-link'>VueJS</a> /
+          <a class='web-skill-link'>AngularJS</a>
+        </div>
+        <div class="skill">
+          <a class='web-skill-link'>NodeJS</a> / <a class='web-skill-link'>ExpressJS</a>
+        </div>
+        <div class="skill">
+          <a class='web-skill-link'>PHP</a> / <a class='web-skill-link'>Symfony 4</a>
+        </div>
+      </div>
+
+      <div class="others">
+        <h3>Outils et autres</h3>
+        <div class="skill-img">
+          <img src="./assets/img/git.png" class="other-skill-img">
+        </div>
+        <div class="skill"><a class="other-skill-link">Git</a></div>
+        <div class="skill"><a class="other-skill-link">Trello</a></div>
+        <div class="skill"><a class="other-skill-link">Windows</a> / <a class="other-skill-link">Linux</a></div>
+      </div>
     </div>
   </section>
 
@@ -58,7 +115,9 @@
           <h3>Festival de Cannes</h3>
           <p>Site fictif pour la gestion du Festival de Cannes (hébergement des VIP et planning des projections).</p>
         </div>
-        <a href="https://github.com/lucianoBrd/Festival" target="_blank">Accéder au dépôt Github</a>
+        <div class="links">
+          <a href="https://github.com/lucianoBrd/Festival" target="_blank">Accéder au dépôt Github</a>
+        </div>
       </div>
       <div class="project">
         <div class="project-img">
@@ -83,6 +142,8 @@
     </div>
 
   </section>
+
+  <script src="app.js"></script>
 </body>
 
 </html>

@@ -18,11 +18,16 @@ body {
   padding: 0;
   margin: 0;
   font-family: open_sans;
+  font-size: 20px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+a:hover {
+  color: silver;
 }
 
 nav {
@@ -51,10 +56,16 @@ nav {
   color: silver;
 }
 
-.landing {
+section {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#landing {
   /* background-color: blue; */
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap-reverse;
   font-size: 30px;
 }
 
@@ -62,17 +73,17 @@ nav {
   width: 50%;
 }
 
-.landing h1 {
+#landing h1 {
   font-size: 40px;
   font-family: poppins;
 }
 
-.landing h2 {
+#landing h2 {
   font-size: 35px;
   font-weight: lighter;
 }
 
-.landing a {
+#landing a {
   border-width: 1px;
   border-color: black;
   border-style: solid;
@@ -80,22 +91,60 @@ nav {
   padding: 15px;
 }
 
-.landing a:hover {
+#landing a:hover {
   background-color: #ecf0f1;
+  color: inherit;
 }
 
 .landing-img img {
   border: 5px solid black;
 }
 
+section>h2 {
+  font-family: poppins;
+}
+
+.about-text {
+  text-align: justify;
+  width: 500px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  width: 500px;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.languages img, .others img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 #projects {
   /* background-color: cadetblue; */
 }
 
-#projects h2 {
-  margin-left: 30px;
-  font-family: poppins;
-}
+
 
 .project-content {
   display: flex;
@@ -105,7 +154,10 @@ nav {
 
 .project {
   /* background-color: brown; */
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
   width: 500px;
 }
 
@@ -121,6 +173,7 @@ nav {
 .project a {
   font-weight: bold;
 }
+
 
 .project-desc,
 .project-desc+a, .links {
