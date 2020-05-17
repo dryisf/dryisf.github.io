@@ -6,7 +6,7 @@ let otherSkillImg = document.querySelector('.other-skill-img');
 
 let displayWebSkillImg = function (e) {
   let skillName = e.target.innerHTML;
-  webSkillImg.src = `./assets/img/${skillName}.png`;
+  webSkillImg.src = `./assets/img/${skillName.toLowerCase()}.png`;
 }
 
 let displayOtherSkillImg = function (e) {
