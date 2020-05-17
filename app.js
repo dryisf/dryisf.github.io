@@ -11,7 +11,7 @@ let displayWebSkillImg = function (e) {
 
 let displayOtherSkillImg = function (e) {
   let skillName = e.target.innerHTML;
-  otherSkillImg.src = `./assets/img/${skillName}.png`;
+  otherSkillImg.src = `./assets/img/${skillName.toLowerCase()}.png`;
 }
 
 for (const skill of webSkills) {
