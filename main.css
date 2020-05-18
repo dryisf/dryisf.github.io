@@ -30,6 +30,10 @@ a:hover {
   color: silver;
 }
 
+.burger {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -39,11 +43,12 @@ nav {
 
 .nav-item-left {
   padding-left: 30px;
+  display: flex;
 }
 
 .nav-brand {
   font-weight: bolder;
-  font-size: 25px;
+  font-family: poppins;
 }
 
 .nav-link {
@@ -119,6 +124,7 @@ section>h2 {
 .skills-content {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .skill-img {
@@ -126,7 +132,9 @@ section>h2 {
   height: 200px;
   position: relative;
 }
-.languages img, .others img {
+
+.languages img,
+.others img {
   width: 200px;
   height: auto;
   position: absolute;
@@ -166,7 +174,8 @@ section>h2 {
 
 
 .project-desc,
-.project-desc+a, .links {
+.project-desc+a,
+.links {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -174,4 +183,59 @@ section>h2 {
 .links {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 770px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-networks,
+  .nav-item-left,
+  .nav-item-right {
+    display: grid;
+  }
+
+  .nav-item-right {
+    padding-left: 30px;
+  }
+
+  .landing-text {
+    width: initial;
+  }
+
+  #landing {
+    text-align: center;
+  }
+
+  #landing h1 {
+    font-size: 30px;
+  }
+
+  #landing h2 {
+    font-size: 25px;
+  }
+
+  .landing-text a {
+    display: none;
+  }
+
+  .landing-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  img {
+    width: 250px !important;
+    height: auto !important;
+  }
+
+  #projects {
+    text-align: center;
+  }
 }

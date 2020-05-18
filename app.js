@@ -21,5 +21,3 @@ for (const skill of webSkills) {
 for (const skill of otherSkills) {
   skill.addEventListener('mouseover', displayOtherSkillImg);
 }
-
-
