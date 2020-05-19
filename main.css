@@ -163,6 +163,11 @@ section>h2 {
   font-family: poppins;
 }
 
+.project h4 {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
 .project img {
   width: 500px;
   height: 250px;
