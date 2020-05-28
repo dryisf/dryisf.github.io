@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-dryisf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dryisf/dryisf.github.io.git"
+  },
+  "author": "dryisf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dryisf/dryisf.github.io/issues"
+  },
+  "homepage": "https://github.com/dryisf/dryisf.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "gsap": "^3.2.6",
+    "jquery": "^3.5.1",
+    "scrollmagic": "^2.0.7",
+    "scrollmagic-plugin-gsap": "^1.0.4"
+  }
+}
