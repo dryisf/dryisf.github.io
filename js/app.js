@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   new fullpage('#fullpage', {
     anchors: ['landing', 'about', 'projects'],
-    autoScrolling: true,
+    autoScrolling: false,
     scrollBar: true,
     scrollingSpeed: 800
   })
