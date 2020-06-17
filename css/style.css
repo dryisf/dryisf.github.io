@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'open_sans';
+  src: url('../assets/fonts/opensans-light-webfont.woff2') format('woff2'),
+    url('../assets/fonts/opensans-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../assets/fonts/poppins-medium-webfont.woff2') format('woff2'),
+    url('../assets/fonts/poppins-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url('../assets/img/banner.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  font-family: open_sans;
+}
+
+a {
+  color: inherit;
+}
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-brand {
+  font-family: poppins;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.nav-link:hover, .navbar-brand:hover, .projects a:hover, .text-muted {
+  color: #eccc68 !important;
+}
+.section {
+  height: 100vh;
+}
+
+.arrow-down {
+  cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arrow-down::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: 3s arrow infinite ease;
+  animation: 3s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+  0%, 100% {
+    top: 150px;
+  }
+  50% {
+    top: 250px;
+  }
+}
+
+@keyframes arrow {
+
+  0%,
+  100% {
+    top: 150px;
+  }
+
+  50% {
+    top: 250px;
+  }
+}
+
+h1 {
+  font-family: poppins;
+}
+
+.about p {
+  font-size: 16px;
+}
+
+figure img {
+  max-height: 500px;
+  width: auto;
+}
+
+figcaption {
+  background-color: rgba(0, 0, 0, 0.800) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imghvr-blur:hover>img {
+  filter: blur(2px);
+  opacity: 1
+}
+
+.imghvr-blur a {
+  display: block;
+  position: relative;
+  color: white;
+}
+
+.imghvr-blur a:hover {
+  color: rgb(238, 69, 69);
+}
