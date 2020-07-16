@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>daryl issoufi - développeur web - lyon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900&family=Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav-item"><a href="index.html#home" class="nav__link">Accueil</a></li>
+        <li class="nav-item"><a href="index.html#skills" class="nav__link">Mes compétences</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav__link">A propos</a></li>
+        <li class="nav-item"><a href="index.html#work" class="nav__link">Mon travail</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      <strong>Studio Ghibli App</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">projet personnel  (wip)</p>
+    <img src="img/ghibli.png" class="intro__img" alt="">
+  </section>
+
+  <div class="portfolio-item-individual">
+    <p>Création d'une application web permettant de consulter des informations sur les films du Studio Ghibli.</p>
+    <img src="img/ghibli-full.png" alt="">
+    <p>Le but de ce projet a été de se former à l'utilisation de la librairie React.js (Hooks). L'application exploite une API renvoyant des données sur les différentes oeuvres du Studio Ghibli.
+    </p>
+    <a target="_blank" href="https://github.com/dryisf/Artkodes-JEE" class="btn btn--portfolio-item">Accéder au dépôt
+      Git</a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:daryl.issoufi@hotmail.fr" class="footer__link">daryl.issoufi@hotmail.fr</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a target="_blank" href="https://github.com/dryisf" class="social-list__link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" href="https://www.linkedin.com/in/dryisf/" class="social-list__link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" href="https://dryisf.github.io/assets/img/CV.pdf" class="social-list__link">
+          <i class="far fa-file-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

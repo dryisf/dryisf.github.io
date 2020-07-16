@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>daryl issoufi - développeur web - lyon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900&family=Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav-item"><a href="index.html#home" class="nav__link">Accueil</a></li>
+        <li class="nav-item"><a href="index.html#skills" class="nav__link">Mes compétences</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav__link">A propos</a></li>
+        <li class="nav-item"><a href="index.html#work" class="nav__link">Mon travail</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      <strong>NBA Datas</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">projet scolaire</p>
+    <img src="img/nbadatas.png" class="intro__img" alt="">
+  </section>
+
+  <div class="portfolio-item-individual">
+    <p>Création en groupe d'une application web à l'aide de l'API balldontlie affichant les statistiques des joueurs de NBA actifs durant la saison 2019-2020.</p>
+    <img src="img/nbadatas-full.png" alt="">
+    <p>Pour ce projet, en ce qui concerne la partie back, je me suis chargé de récupérer les données renvoyées par l'API pour ensuite les stocker dans une base de données MongoDB. A l'aide du framework Express.js, j'ai conçu notre propre API puis ai intégré les données à la partie front en utilisant le framework Vue.js.
+    </p>
+    <a target="_blank" href="https://forge.univ-lyon1.fr/p1702092/lifprojet" class="btn btn--portfolio-item">Accéder au
+      dépôt
+      Git</a>
+      <a target="_blank" href="http://lif.sci-web.net/~nbastat/" class="btn btn--portfolio-item">Accéder
+        au
+        site</a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:daryl.issoufi@hotmail.fr" class="footer__link">daryl.issoufi@hotmail.fr</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a target="_blank" href="https://github.com/dryisf" class="social-list__link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" href="https://www.linkedin.com/in/dryisf/" class="social-list__link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" href="https://dryisf.github.io/assets/img/CV.pdf" class="social-list__link">
+          <i class="far fa-file-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

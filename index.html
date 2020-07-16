@@ -4,145 +4,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daryl Issoufi | Développeur Web</title>
+  <title>daryl issoufi - développeur web - lyon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/fullpage.js/dist/fullpage.min.css">
-  <link rel="stylesheet" href="css/imagehover.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900&family=Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div id="fullpage">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="https://dryisf.github.io/">Daryl Issoufi</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/dryisf">Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/dryisf/">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="daryl.issoufi@hotmail.fr">Mail</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://dryisf.github.io/assets/img/CV.pdf">CV</a>
-          </li>
+  <header>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav-item"><a href="#home" class="nav__link">Accueil</a></li>
+        <li class="nav-item"><a href="#skills" class="nav__link">Mes compétences</a></li>
+        <li class="nav-item"><a href="#about" class="nav__link">A propos</a></li>
+        <li class="nav-item"><a href="#work" class="nav__link">Mon travail</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Salut, je suis <strong>Daryl Issoufi</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">développeur web</p>
+    <img src="img/me01.jpg" class="intro__img" alt="">
+  </section>
+
+  <!-- Mes compétences -->
+  <section class="my-skills" id="skills">
+    <h2 class="section__title section__title--skills">Mes compétences</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Techniques</h3>
+        <ul class="skill-list">
+          <li class="skill-list__item">HTML, CSS / Bootstrap</li>
+          <li class="skill-list__item">Vanilla JS / VueJS / AngularJS / ReactJS</li>
+          <li class="skill-list__item">PHP / Symfony</li>
+          <li class="skill-list__item">NodeJS / ExpressJS</li>
+          <li class="skill-list__item">MongoDB, Mongoose</li>
         </ul>
       </div>
-    </nav>
-
-    <div class="section landing">
-      <div class="container d-flex align-items-center justify-content-center">
-        <div class="landing-content text-center">
-          <h1 class="headtitle display-4">Daryl Issoufi</h1>
-          <p class="lead">Développeur Web Front-End / Fullstack</p>
-          <a href="#about">
-            <div class="arrow-down"></div>
-          </a>
-        </div>
+      <div class="skill">
+        <h3>Outils et autres</h3>
+        <ul class="skill-list">
+          <li class="skill-list__item">Windows / Linux</li>
+          <li class="skill-list__item">Trello</li>
+          <li class="skill-list__item">Slack</li>
+          <li class="skill-list__item">Scrum</li>
+        </ul>
       </div>
+    </div> <!-- / skills -->
+
+    <a href="#work" class="btn">Mon travail</a>
+  </section>
+
+  <!-- A propos -->
+  <section class="about" id="about">
+    <h2 class="section__title section__title--about">qui je suis</h2>
+    <p class="section__subtitle section__subtitle--about">développeur web (en devenir) basé à Lyon</p>
+
+    <div class="about__body">
+      <p>Ayant de l'intérêt pour l'Informatique depuis l'adolescence durant laquelle j'ai découvert mes premières
+        notions de codage en HTML et CSS, j'aimerais me spécialiser dans le développement web. J’ai réalisé plusieurs
+        projets web dans le cadre de mes études mais également à titre personnel dans le but de m’exercer et de me
+        former à diverses technologies.</p>
+      <p>Admissible au Master "Expert Développement Web" d'Ynov Campus Lyon, je suis à la recherche d'un poste de
+        Développeur Web Front-End ou Fullstack en alternance (contrat de professionnalisation ou d'apprentissage) à
+        compter de Septembre 2020.</p>
     </div>
 
-    <div class="section about">
-      <div class="container d-flex align-items-center justify-content-center">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 text-center">
-            <img class="img-fluid" src="assets/img/me.jpg">
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <h1 class="text-center">Salut, moi c'est Daryl.</h1>
-            <p class="text-justify">Ayant de l'intérêt pour l'Informatique depuis l'adolescence durant laquelle j'ai
-              découvert mes premières notions de
-              codage en HTML et CSS, j'aimerais me spécialiser dans le développement web. J’ai réalisé plusieurs projets
-              web dans le
-              cadre de mes études mais également à titre personnel dans le but de m’exercer et de me former à diverses
-              technologies.</p>
-            <p class="text-justify">Admissible au Master "Expert Développement Web" d'Ynov Campus Lyon, je suis à la
-              recherche d'un poste de Développeur Web
-              Front-End ou Fullstack en alternance (contrat de professionnalisation ou d'apprentissage) à compter de
-              Septembre 2020.</p>
-          </div>
-        </div>
-      </div>
+    <img src="img/me02.jpg" class="about__img" alt="">
+  </section>
+
+  <!-- Mon travail -->
+  <section class="work" id="work">
+    <h2 class="section__title section__title--work">Mon travail</h2>
+    <p class="section__subtitle section__subtitle--work">Une partie de mon travail</p>
+
+    <div class="portfolio">
+      <a href="ghibli.html" class="portfolio__item">
+        <img src="img/ghibli.png" alt="" class="portfolio__img">
+      </a>
+
+      <a href="nbadatas.html" class="portfolio__item">
+        <img src="img/nbadatas.png" alt="" class="portfolio__img">
+      </a>
+
+      <a href="artkodes.html" class="portfolio__item">
+        <img src="img/artkodes.png" alt="" class="portfolio__img">
+      </a>
+
+
     </div>
+  </section>
 
-    <div class="section projects">
-      <div class="container d-flex align-items-center justify-content-center">
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:daryl.issoufi@hotmail.fr" class="footer__link">daryl.issoufi@hotmail.fr</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a target="_blank" href="https://github.com/dryisf" class="social-list__link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" href="https://www.linkedin.com/in/dryisf/" class="social-list__link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a target="_blank" href="https://dryisf.github.io/assets/img/CV.pdf" class="social-list__link">
+          <i class="far fa-file-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
-        <div id="project1" class="slide text-center">
-          <figure class="imghvr-blur">
-            <img src="assets/img/nbadatas.png">
-            <figcaption>
-              <div class="caption">
-                <h3>NBA Datas <small class="text-muted">Projet L3</small></h3>
-                <p>Application web conçue à l'aide de l'API balldontlie affichant les statistiques des joueurs de NBA
-                  actifs durant la saison 2019-2020.</p>
-                <a target="_blank" href="http://lif.sci-web.net/~nbastat/">Accéder au site</a>
-                <a target="_blank" href="https://forge.univ-lyon1.fr/p1702092/lifprojet">Accéder au git</a>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div id="project2" class="slide text-center">
-          <figure class="imghvr-blur">
-            <img src="assets/img/cannes.jpg">
-            <figcaption>
-              <div class="caption">
-                <h3>Festival de Cannes <small class="text-muted">Projet DUT</small></h3>
-                <p>Site web de gestion fictive du Festival de Cannes (hébergement des VIP, planning et assignation des
-                  salles de projection).</p>
-                <a target="_blank" href="https://github.com/lucianoBrd/Festival">Accéder au git</a>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div id="project3" class="slide text-center">
-          <figure class="imghvr-blur">
-            <img src="assets/img/artkodes.png">
-            <figcaption>
-              <div class="caption">
-                <h3>Artkodes <small class="text-muted">Projet DUT</small></h3>
-                <p>Portfolio web fictif pour un photographe.</p>
-                <a target="_blank" href="https://github.com/dryisf/Artkodes-JEE">Accéder au git</a>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div id="project4" class="slide text-center">
-          <figure class="imghvr-blur">
-            <img src="assets/img/yna.png">
-            <figcaption>
-              <div class="caption">
-                <h3>You're not alone <small class="text-muted">Projet DUT</small></h3>
-                <p>Site pour une campagne de prévention fictive.</p>
-                <a target="_blank" href="https://github.com/dryisf/You-re-not-alone">Accéder au git</a>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="node_modules/fullpage.js/dist/fullpage.min.js"></script>
-  <script src="node_modules/gsap/dist/gsap.min.js"></script>
-  <script src="node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
-  <script src="node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-  <script src="node_modules/scrollmagic-plugin-gsap/index.js"></script>
-  <script src="node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
