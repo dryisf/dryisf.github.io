@@ -342,10 +342,6 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
-
-  .skill+.skill {
-    /* margin-left: 2em; */
-  }
 }
 
 /* About */
